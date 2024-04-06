@@ -16,7 +16,7 @@ public class TareasNoEvaUD4 {
      * @param args the command line arguments
      * Voy a utilizar esta clase como la principal para deasarrollar las tareas
      * no evaluables del tema 4 que son de los ejercicios propuestos en el tema
-     * 2 que no se habían hecho
+     * 2 que no se habÃ­an hecho
      */
     public static void main(String[] args) {
         // TODO code application logic here
@@ -29,7 +29,7 @@ public class TareasNoEvaUD4 {
         Scanner teclado = new Scanner(System.in);
         String cadena;
         int edad;
-        System.out.println("Por favor, indique su edad a continuación (años):");
+        System.out.println("Por favor, indique su edad a continuaciÃ³n (aÃ±os):");
         cadena = teclado.nextLine();
         edad = Integer.parseInt(cadena);
         
@@ -38,12 +38,12 @@ public class TareasNoEvaUD4 {
         }
         
         /**
-         * Este segundo calcula el valor de una llamada según se haya hablado menos
-         * de tres minutos o más.
+         * Este segundo calcula el valor de una llamada segÃºn se haya hablado menos
+         * de tres minutos o mÃ¡s.
          */
         
         double minuto, llamadaBase = 0.25, minutoExtra = 0.06, costExtra;
-        System.out.println("Informe de la duración de la llamada en minutos:");
+        System.out.println("Informe de la duraciÃ³n de la llamada en minutos:");
         cadena = teclado.nextLine();
         minuto = Integer.parseInt(cadena);
         
@@ -57,8 +57,8 @@ public class TareasNoEvaUD4 {
         }
         
         /**
-         * El siguiente algoritmo calcula si un alumno está aprobado o suspenso
-         * según su nota en formato entero
+         * El siguiente algoritmo calcula si un alumno estÃ¡ aprobado o suspenso
+         * segÃºn su nota en formato entero
          */
         
         int nota;
@@ -74,26 +74,26 @@ public class TareasNoEvaUD4 {
         }
         
         /**
-         * El siguiente algoritmo indica si un número es par o impar, es decir,
+         * El siguiente algoritmo indica si un nÃºmero es par o impar, es decir,
          * si se puede dividir por 2 o si tiene un resto distinto de 0.
          */
         
         int par;
-        System.out.println("Introduzca un número entero:");
+        System.out.println("Introduzca un nÃºmero entero:");
         cadena = teclado.nextLine();
         par = Integer.parseInt(cadena);
         
         if(par%2 == 0){
-            System.out.println("El número es par.");
+            System.out.println("El nÃºmero es par.");
         }
         else{
-            System.out.println("El número es impar.");
+            System.out.println("El nÃºmero es impar.");
         }
         
         /**
          * El siguiente algoritmo se usa para saber si la nota que se introduce 
-         * es correcta o incorrecta. No sé si se refiere a identificarla con un valor
-         * pero entiendo que sí y es el que voy a hacer
+         * es correcta o incorrecta. No sÃ© si se refiere a identificarla con un valor
+         * pero entiendo que sÃ­ y es el que voy a hacer
          */
         
         System.out.println("Introduzca una nota:");
@@ -101,58 +101,58 @@ public class TareasNoEvaUD4 {
         nota = Integer.parseInt(cadena);
         
         if(nota == 8){
-            System.out.println("Sí, 8 es la nota correcta.");
+            System.out.println("SÃ­, 8 es la nota correcta.");
         }
         else{
             System.out.println(nota+" no es la nota correcta.");
         }
         
         /**
-         * Este algoritmo comprueba si un año es bisiesto o no, esto creo recordar
+         * Este algoritmo comprueba si un aÃ±o es bisiesto o no, esto creo recordar
          * que se hizo en ejercicios del tema 4
          */
         
         
-        System.out.println("Para saber si es bisiesto, introduzca aquí el año:");
+        System.out.println("Para saber si es bisiesto, introduzca aquÃ­ el aÃ±o:");
         long aniobisiesto = teclado.nextLong();
         System.out.println(aniobisiesto);
         if(aniobisiesto%100 == 0){
             if(aniobisiesto%4 == 0 && aniobisiesto%400 == 0){
-                System.out.println("El año "+aniobisiesto+" es bisiesto.");
+                System.out.println("El aÃ±o "+aniobisiesto+" es bisiesto.");
                 
             }
             else{
-                System.out.println("El año "+aniobisiesto+" no es bisiesto.");
+                System.out.println("El aÃ±o "+aniobisiesto+" no es bisiesto.");
             }
         }
         else{
             if(aniobisiesto%4 == 0){
-            System.out.println("El año "+aniobisiesto+" es bisiesto.");
+            System.out.println("El aÃ±o "+aniobisiesto+" es bisiesto.");
             }
         }
         
         /**
-         * El siguiente algoritmo solo dice si el número entero introducido es
+         * El siguiente algoritmo solo dice si el nÃºmero entero introducido es
          * -10 o no lo es
          */
         
         teclado.nextLine();
         int negativo;
-        System.out.println("Introduzca un número entero:");
+        System.out.println("Introduzca un nÃºmero entero:");
         cadena = teclado.nextLine();
         negativo = Integer.parseInt(cadena);
         
         if(negativo == -10){
-            System.out.println("El número introducido es -10.");
+            System.out.println("El nÃºmero introducido es -10.");
         }
         else{
-            System.out.println("El número introducido no es -10.");
+            System.out.println("El nÃºmero introducido no es -10.");
         }
         
         /**
-         * El siguiente algoritmo pide 3 números enteros para saber si uno de ellos
-         * es la suma de los otros dos. Diseño un método externo para calcular la
-         * afirmación
+         * El siguiente algoritmo pide 3 nÃºmeros enteros para saber si uno de ellos
+         * es la suma de los otros dos. DiseÃ±o un mÃ©todo externo para calcular la
+         * afirmaciÃ³n
          */
         
         int a, b, c;
@@ -169,40 +169,40 @@ public class TareasNoEvaUD4 {
         c = Integer.parseInt(cadena);
         
         if(sumaSi(a,b,c)){
-            System.out.println("Sí, uno de ellos es la suma de los otros.");
+            System.out.println("SÃ­, uno de ellos es la suma de los otros.");
         }
         else{
-            System.out.println("Ningún número coincide con la suma de los otros dos.");
+            System.out.println("NingÃºn nÃºmero coincide con la suma de los otros dos.");
         }
         
         /**
          * Un algoritmo que calcule el salario de un empleado por horas trabajadas
-         * Pasadas las 40h cobrará la hora extra a 1.5 veces el precio ordinario
+         * Pasadas las 40h cobrarÃ¡ la hora extra a 1.5 veces el precio ordinario
          */
         
         double horaslaboradas, precioporhora, extra;
         
-        System.out.println("¿A cuánto cobra la hora trabajada?");
+        System.out.println("Â¿A cuÃ¡nto cobra la hora trabajada?");
         cadena = teclado.nextLine();
         precioporhora = Double.parseDouble(cadena);
-        System.out.println("¿Cuántas horas ha trabajado esta semana?");
+        System.out.println("Â¿CuÃ¡ntas horas ha trabajado esta semana?");
         cadena = teclado.nextLine();
         horaslaboradas = Double.parseDouble(cadena);
         
         if(horaslaboradas <= 40){
-            System.out.println("Cobrará un total de "+(precioporhora*horaslaboradas)+" euros.");
+            System.out.println("CobrarÃ¡ un total de "+(precioporhora*horaslaboradas)+" euros.");
         }
         else{
             extra = (horaslaboradas-40)*(1.5*precioporhora);
-            System.out.println("Cobrará un total de "+((40*precioporhora)+extra)+" euros.");
+            System.out.println("CobrarÃ¡ un total de "+((40*precioporhora)+extra)+" euros.");
         }
         
         /**
-         * Llegamos a los ejercicios de alternativa múltiple. El primer algoritmo
+         * Llegamos a los ejercicios de alternativa mÃºltiple. El primer algoritmo
          * nos dice si un entero es positivo, negativo o cero
          */
         
-        System.out.println("Introduzca un número entero:");
+        System.out.println("Introduzca un nÃºmero entero:");
         cadena = teclado.nextLine();
         a = Integer.parseInt(cadena);
         
@@ -217,14 +217,14 @@ public class TareasNoEvaUD4 {
         }
         
         /**
-         * Ahora el algoritmo pide dos enteros para saber cuál es mayor o si son
+         * Ahora el algoritmo pide dos enteros para saber cuÃ¡l es mayor o si son
          * el mismo
          */
         
-        System.out.println("Introduzca un número entero:");
+        System.out.println("Introduzca un nÃºmero entero:");
         cadena = teclado.nextLine();
         a = Integer.parseInt(cadena);
-        System.out.println("Introduzca otro número entero:");
+        System.out.println("Introduzca otro nÃºmero entero:");
         cadena = teclado.nextLine();
         b = Integer.parseInt(cadena);
         
@@ -237,18 +237,18 @@ public class TareasNoEvaUD4 {
                 System.out.println("El mayor de ambos es "+b+".");
             }
             else{
-                System.out.println("Son los dos números iguales.");
+                System.out.println("Son los dos nÃºmeros iguales.");
             }
         }
         
         /**
-         * El siguiente algoritmo quiere poner una calificación al alumno según
+         * El siguiente algoritmo quiere poner una calificaciÃ³n al alumno segÃºn
          * la nota que haya sacado
          */
         
         int calif;
         double aux;
-        System.out.println("Introduzca la calificación del alumno:");
+        System.out.println("Introduzca la calificaciÃ³n del alumno:");
         aux = teclado.nextDouble();
         calif = (int) Math.floor(aux);
         switch(calif){
@@ -269,15 +269,14 @@ public class TareasNoEvaUD4 {
         
         /**
          * El siguiente algoritmo pide lo mismo pero con un entero. Yo en el anterior
-         * me he valido de un método de math para transformar el real en entero
-         * y así poder usar una estructura de switch, porque anidar if-else se me
-         * hacía demasiado pesado en código, pero de tener que usar dos, en el primero
-         * usaría la anidación y en este el caso anterior
+         * me he valido de un mÃ©todo de math para transformar el real en entero
+         * y asÃ­ poder usar una estructura de switch, porque anidar if-else se me
+         * hacÃ­a demasiado pesado en cÃ³digo, pero de tener que usar dos, en el primero
+         * usarÃ­a la anidaciÃ³n y en este el caso anterior
          */
         
-        System.out.println("Introduzca la calificación del alumno:");
+        System.out.println("Introduzca la calificaciÃ³n del alumno:");
         aux = teclado.nextDouble();
-        calif = (int) Math.floor(aux);
         
         if(aux < 5){
             System.out.println("SUSPENSO");
@@ -302,19 +301,19 @@ public class TareasNoEvaUD4 {
         }
         
         /**
-         * El siguiente algoritmo se diseña para mostrar el día de la semana
-         * habiendo comprobado previamente que el número introducido está entre
+         * El siguiente algoritmo se diseÃ±a para mostrar el dÃ­a de la semana
+         * habiendo comprobado previamente que el nÃºmero introducido estÃ¡ entre
          * el 1 y el 7
          */
         
         int dia;
         
-        System.out.println("Introduzca un número del 1 al 7.");
+        System.out.println("Introduzca un nÃºmero del 1 al 7.");
         dia = teclado.nextInt();
                     
         while(dia < 1 || dia > 7){
-        System.out.println("Opción errónea.");
-        System.out.println("El número introducido debe estar comprendido entre el 1 y el 7.");
+        System.out.println("OpciÃ³n errÃ³nea.");
+        System.out.println("El nÃºmero introducido debe estar comprendido entre el 1 y el 7.");
         dia = teclado.nextInt();
         
         }
@@ -323,30 +322,30 @@ public class TareasNoEvaUD4 {
                 
         case 1: System.out.println("Es lunes.");break;
         case 2: System.out.println("Es martes.");break;
-        case 3: System.out.println("Es miércoles.");;break;
+        case 3: System.out.println("Es miÃ©rcoles.");;break;
         case 4: System.out.println("Es jueves.");;break;
         case 5: System.out.println("Es viernes.");;break;
-        case 6: System.out.println("Es sábado.");;break;
+        case 6: System.out.println("Es sÃ¡bado.");;break;
         case 7: System.out.println("Es domingo.");;break;
         }
         
         /**
-         * El siguiente algoritmo lee una letra para asignarle un valor de calificación
-         * según el sistema de Nueva Zelanda
+         * El siguiente algoritmo lee una letra para asignarle un valor de calificaciÃ³n
+         * segÃºn el sistema de Nueva Zelanda
          */
         
         teclado.nextLine();
-        System.out.println("Introduzca la calificación correspondiente (A, B, C, D o E).");
+        System.out.println("Introduzca la calificaciÃ³n correspondiente (A, B, C, D o E).");
         String cadena2 = teclado.nextLine();
         char nzel = cadena2.charAt(0);
         
         switch(nzel){
             
-            case 'A': System.out.println("La calificación es de 9-10 puntos.");break;
-            case 'B': System.out.println("La calificación es de 7-8 puntos.");break;
-            case 'C': System.out.println("La calificación es de 5-6-7 puntos.");break;
-            case 'D': System.out.println("La calificación es de 3-4 puntos.");break;
-            case 'E': System.out.println("La calificación es de 0-1-2 puntos.");break;
+            case 'A': System.out.println("La calificaciÃ³n es de 9-10 puntos.");break;
+            case 'B': System.out.println("La calificaciÃ³n es de 7-8 puntos.");break;
+            case 'C': System.out.println("La calificaciÃ³n es de 5-6-7 puntos.");break;
+            case 'D': System.out.println("La calificaciÃ³n es de 3-4 puntos.");break;
+            case 'E': System.out.println("La calificaciÃ³n es de 0-1-2 puntos.");break;
         }
         
         /**
@@ -380,11 +379,11 @@ public class TareasNoEvaUD4 {
          * El siguiente algoritmo recoge 3 enteros y muestra el menor de todos
          */
         
-        System.out.println("Introduzca un número entero:");
+        System.out.println("Introduzca un nÃºmero entero:");
         a = teclado.nextInt();
-        System.out.println("Introduzca otro número entero:");
+        System.out.println("Introduzca otro nÃºmero entero:");
         b = teclado.nextInt();
-        System.out.println("Introduzca otro número entero:");
+        System.out.println("Introduzca otro nÃºmero entero:");
         c = teclado.nextInt();
         
         if(a==b && a==c){
