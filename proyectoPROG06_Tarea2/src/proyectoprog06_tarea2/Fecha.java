@@ -13,8 +13,8 @@ import java.util.Scanner;
 public class Fecha {
 
     /**
-     * Creo adem·s del teclado y cadena, un array que me representa un aÒo no
-     * bisiesto com˙n para poder recurrir a sus elementos cuando sea necesario
+     * Creo adem√°s del teclado y cadena, un array que me representa un a√±o no
+     * bisiesto com√∫n para poder recurrir a sus elementos cuando sea necesario
      */
     private static Scanner teclado = new Scanner(System.in);
     private static String cadena;
@@ -23,23 +23,23 @@ public class Fecha {
     public static int[] introducir_fecha(String mensaje) {
 
         /**
-         * Primero quise crear un mÈtodo que cogiera la fecha por teclado y se
+         * Primero quise crear un m√©todo que cogiera la fecha por teclado y se
          * asegurara de que era la correcta, pero luego hablando con algunos
-         * amigos se me ocurriÛ que era m·s ˙til separar ambas operaciones. Este
-         * primer mÈtodo recoge la fecha en formato String y la divide y
-         * transforma a un array de enteros que se manda a un segundo mÈtodo que
-         * ver· si el n˙mero de dÌas se ajusta al mes y si el aÒo es bisiesto
+         * amigos se me ocurri√≥ que era m√°s √∫til separar ambas operaciones. Este
+         * primer m√©todo recoge la fecha en formato String y la divide y
+         * transforma a un array de enteros que se manda a un segundo m√©todo que
+         * ver√° si el n√∫mero de d√≠as se ajusta al mes y si el a√±o es bisiesto
          * Para ello, creo dos arrays, uno de enteros y otro de texto y un
          * booleano Pido por teclado la fecha con formato la asigno dividiendo
-         * por las barras y hago el cambio a enteros, esta informaciÛn es la que
-         * mando al mÈtodo para ver si es una fecha correcta
+         * por las barras y hago el cambio a enteros, esta informaci√≥n es la que
+         * mando al m√©todo para ver si es una fecha correcta
          */
         int a[] = new int[3];
         String[] divifecha;
         boolean correcto;
 
         do {
-            System.out.println("Introduzca a continuaciÛn la fecha en formato A—O/MES/DÕA:");
+            System.out.println("Introduzca a continuaci√≥n la fecha en formato A√ëO/MES/D√çA:");
             cadena = teclado.nextLine();
             divifecha = cadena.split("/");
             for (int i = 0; i < divifecha.length; i++) {
@@ -55,14 +55,14 @@ public class Fecha {
     public static boolean comprobar_fecha(int[] a) {
 
         /**
-         * Llega un array de enteros, pos0 el aÒo, pos1 el mes, pos2 el dÌa
+         * Llega un array de enteros, pos0 el a√±o, pos1 el mes, pos2 el d√≠a
          * Tengo un boolean para el bisiesto y otro para devolver que la fecha
          * es correcta
          */
         boolean comprueba = false;
         boolean bisiesto = false;
 
-        if (a[2] < 0 || a[2] > 31 || a[1] < 0 || a[1] > 12) {
+        if (a[2] < 1 || a[2] > 31 || a[1] < 1 || a[1] > 12) {
 
             System.out.println("FECHA INCORRECTA. POR FAVOR, VUELVA A INTRODUCIR UNA FECHA.");
             return comprueba;
@@ -79,7 +79,7 @@ public class Fecha {
             }
 
             /**
-             * Ahora seg˙n el tipo de mes asigno un valor
+             * Ahora seg√∫n el tipo de mes asigno un valor
              */
             if (a[1] == 4 || a[1] == 6 || a[1] == 9 || a[1] == 11) {
                 if (a[2] > 30) {
@@ -112,8 +112,8 @@ public class Fecha {
 
         /**
          * creo una variable para hacer el recuento, al mes que han aportado, le
-         * resto una posiciÛn en el array de meses para hacer la suma del resto
-         * de meses anteriores y los dÌas, finalmente le sumo 1 si es bisiesto
+         * resto una posici√≥n en el array de meses para hacer la suma del resto
+         * de meses anteriores y los d√≠as, finalmente le sumo 1 si es bisiesto
          */
         int recuento = b[2];
 
