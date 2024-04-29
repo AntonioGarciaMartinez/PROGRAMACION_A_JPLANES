@@ -4,8 +4,6 @@
  */
 package AytoLaMurta;
 
-import java.util.ArrayList;
-import java.util.ListIterator;
 import java.util.Scanner;
 
 /**
@@ -21,18 +19,18 @@ public class AytoMurtaServicioTractores {
         // TODO code application logic here
 
         /**
-         * Necesito un menú para dar de alta tractores, sacar un listado de
-         * tractores según se hayan insertado, listado en orden ascendente de
-         * matrícula, en orden descendente y finalizar. Pide dar de alta 4
-         * tractores y comprobar si ya está dado de alta.
+         * Necesito un menÃº para dar de alta tractores, sacar un listado de
+         * tractores segÃºn se hayan insertado, listado en orden ascendente de
+         * matrÃ­cula, en orden descendente y finalizar. Pide dar de alta 4
+         * tractores y comprobar si ya estÃ¡ dado de alta.
          */
         Tractor t1 = new Tractor("3589", "Manolo Bombo");
         Tractor t2 = new Tractor("8456", "Pepon Nieto");
-        Tractor t3 = new Tractor("6584", "Andrés Escobar");
+        Tractor t3 = new Tractor("6584", "AndrÃ©s Escobar");
         Tractor t4 = new Tractor("0643", "Maria Cuenca");
         /**
          * creo un objeto del tipo ArrayListTractores y le agrego los tractores
-         * arriba creados (4 decía el ejercicio)
+         * arriba creados (4 decÃ­a el ejercicio)
          */
         ArrayListTractores tractores = new ArrayListTractores();
         tractores.add(t1);
@@ -40,7 +38,7 @@ public class AytoMurtaServicioTractores {
         tractores.add(t3);
         tractores.add(t4);
 
-        //me valgo del menú que ya conocemos para mostrar las opciones
+        //me valgo del menÃº que ya conocemos para mostrar las opciones
         int opcion;
 
         do {
@@ -49,7 +47,7 @@ public class AytoMurtaServicioTractores {
             opcion = introducirEntero("Seleccione una de las opciones:");
 
             while (opcion < 1 || opcion > 5) {
-                System.out.println("Opción errónea.");
+                System.out.println("OpciÃ³n errÃ³nea.");
                 opcion = introducirEntero("Seleccione una de las opciones:");
             }
 
@@ -68,26 +66,26 @@ public class AytoMurtaServicioTractores {
                     tractores.ordenarDes();
                     break;
                 default:
-                    System.out.println("Programa finalizado con éxito.");
+                    System.out.println("Programa finalizado con Ã©xito.");
             }
         } while (opcion != 5);
     }
 
-    //creo el mostrarMenu como hacíamos antes en otras unidades
+    //creo el mostrarMenu como hacÃ­amos antes en otras unidades
     public static void mostrarMenu() {
         System.out.println("_________________________________________________________________________________");
         System.out.println(".Ayto. La Murta. Servicio de Tractores.");
-        System.out.println("Elija una de las siguientes opciones introduciendo el número que le corresponde.");
+        System.out.println("Elija una de las siguientes opciones introduciendo el nÃºmero que le corresponde.");
         System.out.println("1. Dar de alta un tractor.");
-        System.out.println("2. Mostrar listado de tractores según orden de inserción.");
-        System.out.println("3. Mostrar listado de tractores según orden ascendente de matrícula.");
-        System.out.println("4. Mostrar listado de tractores según orden descendente de matrícula.");
+        System.out.println("2. Mostrar listado de tractores segÃºn orden de inserciÃ³n.");
+        System.out.println("3. Mostrar listado de tractores segÃºn orden ascendente de matrÃ­cula.");
+        System.out.println("4. Mostrar listado de tractores segÃºn orden descendente de matrÃ­cula.");
         System.out.println("5. Salir.");
         System.out.println("_________________________________________________________________________________");
         System.out.println("");
     }
 
-    //y su correspondiente entero para la opción del menú
+    //y su correspondiente entero para la opciÃ³n del menÃº
     public static int introducirEntero(String mensaje) {
 
         int opcion;
